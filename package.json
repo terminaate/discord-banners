@@ -1,0 +1,43 @@
+{
+  "name": "discord-banners",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "eslint ./src/**/* --fix",
+    "format": "prettier --write ./src/**/*",
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "new:util": "hygen new util",
+    "new:hook": "hygen new hook",
+    "new:component": "hygen new component",
+    "new:page": "hygen new page",
+    "new:context": "hygen new context",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "classnames": "^2.3.2",
+    "framer-motion": "^7.5.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.3",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "hygen": "^6.2.11",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "terser": "^5.15.1",
+    "typescript": "^4.6.3",
+    "vite": "^3.2.7"
+  }
+}

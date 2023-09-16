@@ -1,0 +1,33 @@
+.loaderScreen {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-thierty);
+  color: var(--text-primary);
+  z-index: 100;
+}
+
+.loaderScreen img {
+  height: 300px;
+  transition: 0.5s;
+}
+
+.text {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: -0.03em;
+}
+
+.textSecondary {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+}

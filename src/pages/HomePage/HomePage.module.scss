@@ -1,0 +1,39 @@
+.logoText {
+  font-family: var(--font-secondary-bold);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+  padding-bottom: 7px;
+  user-select: none;
+}
+
+.serverPrompt {
+  margin-top: 25px;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 325;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: rgba(178, 178, 180, 0.41);
+  text-decoration: none;
+}
+
+.serverPrompt span {
+  color: rgba(178, 178, 180, 0.41);
+  font-family: var(--font-primary);
+  text-decoration: underline;
+}
+
+.githubButton {
+  position: absolute;
+  bottom: 27px;
+  cursor: pointer;
+  text-decoration: none;
+  width: max-content;
+  height: max-content;
+  z-index: -99;
+  user-select: none;
+}

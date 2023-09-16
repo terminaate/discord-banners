@@ -1,0 +1,26 @@
+.button {
+  padding: 10px 15px 10px 14px;
+  background: var(--brand-primary);
+  border-radius: 3px;
+  color: var(--text-primary);
+  font-family: var(--font-secondary);
+  cursor: pointer;
+  transition: background-color 0.5s;
+  background-color: var(--brand-primary);
+}
+
+.button:hover {
+  background-color: var(--brand-secondary);
+}
+
+.button[data-background="false"] {
+  background: none;
+}
+
+.button[data-background="false"]:hover {
+  text-decoration: underline;
+}
+
+.button:disabled {
+  background-color: rgba(76, 88, 204, 0.76);
+}

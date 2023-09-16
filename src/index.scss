@@ -1,0 +1,99 @@
+@font-face {
+  src: url("./assets/fonts/ABCGintoNormal.otf");
+  font-family: "Ginto";
+}
+
+@font-face {
+  src: url("./assets/fonts/ABCGintoNormalBold.otf");
+  font-family: "GintoBold";
+}
+
+@font-face {
+  src: url("./assets/fonts/Whitney.otf");
+  font-family: Whitney;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: 2px;
+  scrollbar-color: var(--text-secondary) none;
+  outline: none;
+  font-family: var(--font-primary);
+}
+
+:root {
+  --background-primary: #242527FF;
+  --background-secondary: #18191c;
+  --background-thierty: #202225;
+  --background-darked: rgba(0, 0, 0, 0.5);
+  --font-primary: Whitney, sans-serif;
+  --font-secondary: "Ginto", sans-serif;
+  --font-secondary-bold: "GintoBold", sans-serif;
+  --text-primary: #fff;
+  --text-secondary: #B2B2B4;
+  --brand-primary: #5865F2;
+  --brand-secondary: rgba(88, 101, 242, 0.76);
+}
+
+*::selection {
+  background-color: var(--brand-primary);
+}
+
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+input {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-secondary);
+}
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background-thierty);
+  color: var(--text-primary);
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.hiddenOpacity {
+  opacity: 0;
+}
+
+.loaderImage {
+  transition: 0.5s;
+  height: 300px;
+}

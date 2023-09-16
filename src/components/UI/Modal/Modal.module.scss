@@ -1,0 +1,19 @@
+.modalScreen {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-darked);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+
+  .modalContent {
+    background-color: var(--background-secondary);
+    padding: 26px;
+    border-radius: 14px;
+    //animation: showModal 0.5s both cubic-bezier(.71, -0.18, .59, 1.43);
+    min-height: 200px;
+    width: 700px;
+  }
+}

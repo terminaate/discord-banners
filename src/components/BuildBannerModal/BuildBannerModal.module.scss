@@ -1,0 +1,48 @@
+.titleLogo {
+  font-family: var(--font-secondary-bold);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: -0.03em;
+  padding-bottom: 14px;
+}
+
+.tagline {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin-block: 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.taskPrompt {
+  margin-bottom: 14px;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 325;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: var(--text-secondary);
+}
+
+.taskPrompt a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+}
+
+.buttonsContainer {
+  margin-top: 59px;
+  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 30px;
+}

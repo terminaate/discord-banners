@@ -3,14 +3,14 @@ import { AnimatePresence, HTMLMotionProps, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
 import cl from './Modal.module.scss';
 import classNames from 'classnames';
-import useKeyPress from '@/hooks/useKeyPress';
+import { useKeyPress } from '@/hooks/useKeyPress';
 
 export type Props = HTMLMotionProps<'div'> & {
   visible: boolean;
   setVisible: Dispatch<SetStateAction<boolean>> | ((newValue: boolean) => void);
 };
 
-const Modal: FC<Props> = ({
+export const Modal: FC<Props> = ({
   children,
   visible,
   setVisible,
@@ -59,5 +59,3 @@ const Modal: FC<Props> = ({
     document.querySelector('#modals')!,
   );
 };
-
-export default Modal;

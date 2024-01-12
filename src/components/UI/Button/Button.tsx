@@ -6,7 +6,7 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   background?: boolean;
 };
 
-const Button: FC<Props> = ({
+export const Button: FC<Props> = ({
   children,
   background = true,
   className,
@@ -22,5 +22,3 @@ const Button: FC<Props> = ({
     </button>
   );
 };
-
-export default Button;

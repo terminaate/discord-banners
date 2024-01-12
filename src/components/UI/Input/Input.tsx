@@ -4,8 +4,6 @@ import classNames from 'classnames';
 
 type Props = InputHTMLAttributes<HTMLInputElement>;
 
-const Input: FC<Props> = ({ className, ...props }) => {
+export const Input: FC<Props> = ({ className, ...props }) => {
   return <input {...props} className={classNames(cl.input, className)} />;
 };
-
-export default Input;

@@ -1,7 +1,7 @@
 import { AnimatePresence, HTMLMotionProps, motion } from 'framer-motion';
 import React, { FC } from 'react';
 import cl from './Loader.module.scss';
-import loaderImage from '@/assets/images/loading.gif';
+import loaderImage from '#/images/loading.gif';
 import classNames from 'classnames';
 
 type Props = HTMLMotionProps<'div'> & {
@@ -10,7 +10,13 @@ type Props = HTMLMotionProps<'div'> & {
   body?: string;
 };
 
-const Loader: FC<Props> = ({ className, visible, title, body, ...props }) => {
+export const Loader: FC<Props> = ({
+  className,
+  visible,
+  title,
+  body,
+  ...props
+}) => {
   return (
     <AnimatePresence>
       {visible && (
@@ -30,5 +36,3 @@ const Loader: FC<Props> = ({ className, visible, title, body, ...props }) => {
     </AnimatePresence>
   );
 };
-
-export default Loader;

@@ -1,16 +1,19 @@
 import { Route, Routes } from 'react-router-dom';
-import HomePage from '@/pages/HomePage';
-import BannerPage from '@/pages/BannerPage';
-import NotFoundPage from '@/pages/NotFoundPage';
+import { lazy, Suspense } from 'react';
+import { Loader } from 'src/components/UI/Loader';
 
-const App = () => {
+const HomePage = lazy(() => import('@/pages/HomePage'));
+const BannerPage = lazy(() => import('@/pages/BannerPage'));
+const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
+
+export const App = () => {
   return (
-    <Routes>
-      <Route index element={<HomePage />} />
-      <Route path={'/banner/:id'} element={<BannerPage />} />
-      <Route path="*" element={<NotFoundPage />} />
-    </Routes>
+    <Suspense fallback={<Loader visible={true} />}>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path={'/banner/:id'} element={<BannerPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </Suspense>
   );
 };
-
-export default App;

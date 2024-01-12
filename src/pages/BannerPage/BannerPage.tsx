@@ -3,11 +3,11 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import cl from './BannerPage.module.scss';
 import { BannerService } from '@/services/BannerService';
-import Loader from '@/components/Loader';
+import { Loader } from 'src/components/UI/Loader';
 import Input from '@/components/UI/Input';
 import Button from '@/components/UI/Button';
 
-const BannerPage = () => {
+export const BannerPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [isLoaderVisible, setIsLoaderVisible] = useState<boolean>(true);
@@ -15,6 +15,7 @@ const BannerPage = () => {
 
   const onMount = async () => {
     const candidate = await BannerService.getBannerImage(id);
+
     if (!id || !candidate) {
       navigate('/');
     } else {
@@ -60,5 +61,3 @@ const BannerPage = () => {
     </>
   );
 };
-
-export default BannerPage;

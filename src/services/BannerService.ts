@@ -2,7 +2,7 @@ import { $api, SERVER_URL } from '@/http';
 
 export class BannerService {
   static async getBannerImage(userId?: string | null) {
-    if (userId === undefined || userId === null) {
+    if (!userId) {
       return null;
     }
 

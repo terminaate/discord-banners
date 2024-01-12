@@ -1,14 +1,16 @@
-import loaderImageSrc from '@/assets/images/loading.gif';
+import loaderImg from '@/assets/images/loading.gif';
 
 export function initLoader() {
-  const loader = document.querySelector<HTMLDivElement>('.loader');
-  const loaderImage = document.querySelector<HTMLImageElement>('.loaderImage');
+  const loader = document.getElementById('loader') as HTMLDivElement;
+  const loaderImage = document.getElementById(
+    'loaderImage',
+  ) as HTMLImageElement;
 
-  if (loaderImage !== null) {
-    loaderImage.src = loaderImageSrc;
+  if (loaderImage) {
+    loaderImage.src = loaderImg;
   }
 
-  document.body.onload = () => {
+  document.body.onload = async () => {
     if (loader !== null) {
       setTimeout(() => {
         loader.className = 'loader hiddenOpacity';

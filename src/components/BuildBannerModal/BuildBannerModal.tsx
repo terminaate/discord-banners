@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 
 type Props = ModalProps;
 
-const BuildBannerModal: FC<Props> = ({ ...props }) => {
+export const BuildBannerModal: FC<Props> = (props) => {
   const [userIdInput, onUserIdInputChange] = useInputState('');
   const navigate = useNavigate();
 
@@ -19,6 +19,7 @@ const BuildBannerModal: FC<Props> = ({ ...props }) => {
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
     const isBannerExist = Boolean(
       await BannerService.getBannerImage(userIdInput),
     );
@@ -47,7 +48,7 @@ const BuildBannerModal: FC<Props> = ({ ...props }) => {
         </span>
         <Input
           placeholder={'Discord User ID'}
-          onInput={onUserIdInputChange}
+          onChange={onUserIdInputChange}
           value={userIdInput}
           minLength={18}
           required={true}
@@ -63,5 +64,3 @@ const BuildBannerModal: FC<Props> = ({ ...props }) => {
     </Modal>
   );
 };
-
-export default BuildBannerModal;

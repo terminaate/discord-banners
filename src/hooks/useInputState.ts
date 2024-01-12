@@ -1,4 +1,10 @@
-import { ChangeEvent, Dispatch, SetStateAction, useState } from 'react';
+import {
+  ChangeEvent,
+  Dispatch,
+  SetStateAction,
+  useCallback,
+  useState,
+} from 'react';
 
 type UseInputStateReturn = [
   string,
@@ -12,10 +18,10 @@ export function useInputState(
 ): UseInputStateReturn {
   const [state, setState] = useState<string>(initialState);
 
-  const onInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const onInputChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     onChange?.(e);
     setState(e.target.value);
-  };
+  }, []);
 
   return [state, onInputChange, setState];
 }

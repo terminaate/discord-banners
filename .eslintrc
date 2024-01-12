@@ -6,7 +6,8 @@
     "sourceType": "module"
   },
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "import"
   ],
   "extends": [
     "eslint:recommended",
@@ -24,7 +25,8 @@
     "react-hooks/exhaustive-deps": "off",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
     "react/jsx-no-comment-textnodes": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "import/no-default-export": "error"
   },
   "settings": {
     "react": {

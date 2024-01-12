@@ -1,11 +1,11 @@
 import cl from './HomePage.module.scss';
-import BasicPage from '@/components/BasicPage';
-import Button from '@/components/UI/Button';
+import { BasicPage } from '@/components/BasicPage';
+import { Button } from '@/components/UI/Button';
 import githubIcon from '@/assets/icons/github.svg';
 import { useState } from 'react';
-import BuildBannerModal from '@/components/BuildBannerModal';
+import { BuildBannerModal } from '@/components/BuildBannerModal';
 
-const HomePage = () => {
+export const HomePage = () => {
   const [buildBannerModal, setBuildBannerModal] = useState<boolean>(false);
 
   return (
@@ -39,5 +39,3 @@ const HomePage = () => {
     </>
   );
 };
-
-export default HomePage;

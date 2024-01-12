@@ -1,6 +1,6 @@
 import { useLayoutEffect, useState } from 'react';
 
-export default (query: string) => {
+export const useMatchMedia = (query: string) => {
   const media = matchMedia(query);
 
   const [isMedia, setIsMedia] = useState<boolean>(media.matches);

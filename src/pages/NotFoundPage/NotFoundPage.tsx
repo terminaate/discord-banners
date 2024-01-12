@@ -1,11 +1,9 @@
-import BasicPage from '@/components/BasicPage';
+import { BasicPage } from '@/components/BasicPage';
 
-const NotFoundPage = () => {
+export const NotFoundPage = () => {
   return (
     <BasicPage>
-      I am sorry, something goes wrong, this page is not found
+      I am sorry. I guess something goes wrong, this page is not found
     </BasicPage>
   );
 };
-
-export default NotFoundPage;

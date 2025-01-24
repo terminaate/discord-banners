@@ -1,8 +1,8 @@
 import cl from './BuildBannerModal.module.scss';
 import type { FC, FormEvent } from 'react';
-import Modal, { Props as ModalProps } from '@/components/UI/Modal';
-import Input from '@/components/UI/Input';
-import Button from '@/components/UI/Button';
+import { Modal, Props as ModalProps } from '@/components/UI/Modal';
+import { Input } from '@/components/UI/Input';
+import { Button } from '@/components/UI/Button';
 import { useInputState } from '@/hooks/useInputState';
 import { BannerService } from '@/services/BannerService';
 import { useNavigate } from 'react-router-dom';

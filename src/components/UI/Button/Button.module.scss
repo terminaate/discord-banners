@@ -13,11 +13,11 @@
   background-color: var(--brand-secondary);
 }
 
-.button[data-background="false"] {
+.button[data-background='false'] {
   background: none;
 }
 
-.button[data-background="false"]:hover {
+.button[data-background='false']:hover {
   text-decoration: underline;
 }
 

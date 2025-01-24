@@ -1,15 +1,15 @@
 @font-face {
-  src: url("./assets/fonts/ABCGintoNormal.otf");
-  font-family: "Ginto";
+  src: url('./assets/fonts/ABCGintoNormal.otf');
+  font-family: 'Ginto';
 }
 
 @font-face {
-  src: url("./assets/fonts/ABCGintoNormalBold.otf");
-  font-family: "GintoBold";
+  src: url('./assets/fonts/ABCGintoNormalBold.otf');
+  font-family: 'GintoBold';
 }
 
 @font-face {
-  src: url("./assets/fonts/Whitney.otf");
+  src: url('./assets/fonts/Whitney.otf');
   font-family: Whitney;
 }
 
@@ -26,16 +26,16 @@
 }
 
 :root {
-  --background-primary: #242527FF;
+  --background-primary: #242527ff;
   --background-secondary: #18191c;
   --background-thierty: #202225;
   --background-darked: rgba(0, 0, 0, 0.5);
   --font-primary: Whitney, sans-serif;
-  --font-secondary: "Ginto", sans-serif;
-  --font-secondary-bold: "GintoBold", sans-serif;
+  --font-secondary: 'Ginto', sans-serif;
+  --font-secondary-bold: 'GintoBold', sans-serif;
   --text-primary: #fff;
-  --text-secondary: #B2B2B4;
-  --brand-primary: #5865F2;
+  --text-secondary: #b2b2b4;
+  --brand-primary: #5865f2;
   --brand-secondary: rgba(88, 101, 242, 0.76);
 }
 

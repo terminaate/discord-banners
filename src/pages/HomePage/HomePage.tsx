@@ -21,7 +21,7 @@ export const HomePage = () => {
           className={cl.serverPrompt}
           rel="noreferrer"
         >
-          For use this tool you need connect to our <span>server</span>
+          For using this tool you need join to our <span>discord server</span>
         </a>
         <a
           className={cl.githubButton}

@@ -29,7 +29,9 @@ export const BannerPage = () => {
   }, []);
 
   const onCopyButtonClick = async () => {
-    await navigator.clipboard.writeText(String(bannerSVG));
+    await navigator.clipboard.writeText(
+      BannerService.getBannerURL(userId ?? ''),
+    );
 
     alert('URL copied!');
   };

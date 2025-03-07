@@ -7,9 +7,7 @@ import { useInputState } from '@/hooks/useInputState';
 import { BannerService } from '@/services/BannerService';
 import { useNavigate } from 'react-router-dom';
 
-type Props = ModalProps;
-
-export const BuildBannerModal: FC<Props> = (props) => {
+export const BuildBannerModal: FC<ModalProps> = (props) => {
   const [userIdInput, onUserIdInputChange] = useInputState('');
   const navigate = useNavigate();
 
@@ -36,7 +34,7 @@ export const BuildBannerModal: FC<Props> = (props) => {
         <h2 className={cl.tagline}>Get your own banner!</h2>
         <div className={cl.line} />
         <span className={cl.taskPrompt}>
-          Enter user id (
+          Enter username or user id (
           <a
             target={'_blank'}
             href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-"
@@ -47,12 +45,10 @@ export const BuildBannerModal: FC<Props> = (props) => {
           )
         </span>
         <Input
-          placeholder={'Discord User ID'}
+          placeholder={'Username or User ID'}
           onChange={onUserIdInputChange}
           value={userIdInput}
-          minLength={18}
           required={true}
-          pattern={/[0-9]+/.source}
         />
         <div className={cl.buttonsContainer}>
           <Button type={'submit'}>Get my own banner!</Button>

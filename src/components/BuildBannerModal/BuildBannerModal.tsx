@@ -51,7 +51,7 @@ export const BuildBannerModal: FC<ModalProps> = (props) => {
           required={true}
         />
         <div className={cl.buttonsContainer}>
-          <Button type={'submit'}>Get my own banner!</Button>
+          <Button type={'submit'}>Next</Button>
           <Button onClick={onCancelButtonClick} background={false}>
             Cancel
           </Button>

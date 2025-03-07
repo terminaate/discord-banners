@@ -14,6 +14,7 @@ src/assets/models
 *.local
 *.prod
 *.production
+!.env.production
 
 # Editor directories and files
 .vscode/*

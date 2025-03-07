@@ -1,9 +1,9 @@
 import cl from './HomePage.module.scss';
 import { BasicPage } from '@/components/BasicPage';
 import { Button } from '@/components/UI/Button';
-import githubIcon from '@/assets/icons/github.svg';
 import { useState } from 'react';
 import { BuildBannerModal } from '@/components/BuildBannerModal';
+import { FaGithub } from 'react-icons/fa';
 
 export const HomePage = () => {
   const [buildBannerModal, setBuildBannerModal] = useState<boolean>(false);
@@ -29,7 +29,7 @@ export const HomePage = () => {
           target={'_blank'}
           rel="noreferrer"
         >
-          <img src={githubIcon} alt={githubIcon} />
+          <FaGithub size={20} />
         </a>
       </BasicPage>
       <BuildBannerModal

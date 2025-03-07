@@ -5,3 +5,9 @@
 *.svg
 *.png
 *.otf
+*.svg
+*.png
+*.d.ts
+*.otf
+*.gif
+./src/assets/**/*

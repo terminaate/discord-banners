@@ -36,19 +36,25 @@ export const BannerPage = () => {
     alert('URL copied!');
   };
 
+  const onBackButtonClick = () => {
+    navigate('/');
+  };
+
   if (bannerSVG === null) {
     return null;
   }
 
   return (
     <>
-      <BasicPage>
+      <BasicPage className={cl.page}>
         <h1 className={cl.title}>Here is your banner!</h1>
+
         <div className={cl.mainContent}>
           <div
             className={cl.bannerImage}
             dangerouslySetInnerHTML={{ __html: bannerSVG ?? '' }}
           />
+
           <div className={cl.copyButtons}>
             <Input
               className={cl.bannerUrl}
@@ -56,6 +62,10 @@ export const BannerPage = () => {
             />
             <Button onClick={onCopyButtonClick}>Copy</Button>
           </div>
+
+          <Button onClick={onBackButtonClick} className={cl.backButton}>
+            Get next banner
+          </Button>
         </div>
       </BasicPage>
       <Loader

@@ -24,9 +24,8 @@ export const Modal: FC<Props> = ({
 
   const preventClosingModal = useCallback((e: MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
-    if (onClick) {
-      onClick(e);
-    }
+
+    onClick?.(e);
   }, []);
 
   useKeyPress('Escape', closeModal, 'keydown');

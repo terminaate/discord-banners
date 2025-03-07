@@ -1,4 +1,6 @@
 *.svg
 *.png
 *.d.ts
-./src/assets
+*.otf
+*.gif
+./src/assets/**/*

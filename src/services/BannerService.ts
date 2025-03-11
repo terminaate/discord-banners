@@ -11,7 +11,7 @@ export class BannerService {
     }
 
     try {
-      const { data } = await $api.get(`/widget/${userId}`);
+      const { data } = await $api.get(`/banner/${userId}`);
       return data;
     } catch (e) {
       return null;

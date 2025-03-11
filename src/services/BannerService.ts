@@ -2,7 +2,7 @@ import { $api, SERVER_URL } from '@/http';
 
 export class BannerService {
   static getBannerURL(userId: string): string {
-    return `${SERVER_URL}/widget/${userId}`;
+    return `${SERVER_URL}/banner/${userId}`;
   }
 
   static async getBannerImage(userId?: string | null) {

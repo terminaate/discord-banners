@@ -5,13 +5,18 @@ export class BannerService {
     return `${SERVER_URL}/banner/${userId}`;
   }
 
-  static async getBannerImage(userId?: string | null) {
+  static async getBannerImage(
+    userId?: string | null,
+    searchParams?: URLSearchParams,
+  ) {
     if (!userId) {
       return null;
     }
 
     try {
-      const { data } = await $api.get(`/banner/${userId}`);
+      const { data } = await $api.get(`/banner/${userId}`, {
+        params: searchParams,
+      });
       return data;
     } catch (e) {
       return null;

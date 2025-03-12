@@ -29,10 +29,14 @@
       //margin-top: 15px;
       display: flex;
       width: 100%;
+
+      button {
+        margin-left: 14px;
+      }
     }
 
-    .copyButtons button {
-      margin-left: 14px;
+    .assetSelect {
+      min-width: 300px;
     }
 
     .backButton {

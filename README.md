@@ -1,8 +1,10 @@
 # Discord banners
 
+<a href="https://status.terminaate.site/status/discord-banners" align="center">
 <img src="https://status.terminaate.site/api/badge/4/status" alt="status">
 <img src="https://status.terminaate.site/api/badge/4/uptime" alt="uptime">
 <img src="https://status.terminaate.site/api/badge/4/response" alt="response">
+</a>
 
 ## 🚀 Overview
 

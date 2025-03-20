@@ -1,17 +1,21 @@
 # Discord banners
 
-<a href="https://status.terminaate.site/status/discord-banners" align="center">
+<p align="center">
+<a href="https://status.terminaate.site/status/discord-banners">
 <img src="https://status.terminaate.site/api/badge/4/status" alt="status">
 <img src="https://status.terminaate.site/api/badge/4/uptime" alt="uptime">
 <img src="https://status.terminaate.site/api/badge/4/response" alt="response">
 </a>
+</p>
 
 ## 🚀 Overview
 
 This is the frontend for [Discord banners](https://discord-banners.terminaate.site), an open-source project that
 provides banner image for your discord profile.
 
+<p align="center">
 <img src="https://discord-banners-api.terminaate.site/banner/terminaate?fakeProfile=true&cache=true" alt="banner image" >
+</p>
 
 ## 📦 Tech Stack
 

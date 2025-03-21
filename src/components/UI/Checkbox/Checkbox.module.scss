@@ -1,0 +1,13 @@
+.checkboxContainer {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--background-darked);
+  background-color: var(--background-secondary);
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+  &[data-active="true"] {
+    background-color: #07d116;
+  }
+}

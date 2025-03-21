@@ -14,7 +14,7 @@ This is the frontend for [Discord banners](https://discord-banners.terminaate.si
 provides banner image for your discord profile.
 
 <p align="center">
-<img src="https://discord-banners-api.terminaate.site/banner/terminaate?fakeProfile=true&cache=true" alt="banner image" >
+<img src="https://discord-banners-api.terminaate.site/banner/terminaate?fakeProfile=true" alt="banner image" >
 </p>
 
 ## 📦 Tech Stack
